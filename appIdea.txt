@@ -1,0 +1,5 @@
+Course Tracker
+- Pretty much an agenda that uses a scroll view to keep track of your courses
+- Start by asking to add (a) course(s) and the type of course (displayed with an icon; ie. physics displayed with an atom icon, math with a pi icon, etc...), as well as course title  and course code.
+- Each course is added to a scroll view which you can swipe between. You press the icon which takes you to a page where you can put "to-dos" among other things.
+- The course pages may get more complex with time

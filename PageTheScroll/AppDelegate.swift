@@ -13,9 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        // Updating the navigation bar appearance; it's colour and text colour. Title originally set in the attributes inspector in the main.storyboard file
+        UINavigationBar.appearance().backgroundColor = UIColor.cyan
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.gray]
         return true
     }
 
