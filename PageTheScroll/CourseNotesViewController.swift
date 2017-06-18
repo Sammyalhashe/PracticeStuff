@@ -3,8 +3,7 @@
 //  PageTheScroll
 //
 //  Created by Sammy Alhashemi on 2017-06-16.
-//  Copyright © 2017 Devslopes. All rights reserved.
-//
+
 
 import UIKit
 
