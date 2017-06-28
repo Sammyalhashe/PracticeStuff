@@ -6,14 +6,15 @@
 
 
 import UIKit
+import FSCalendar
 
-class CourseNotesViewController: UIViewController {
+class CourseNotesViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
     
     var CourseTitle: String?
     
     @IBOutlet weak var CourseNameLabel: UILabel!
     
-    @IBOutlet weak var CourseToDoListLabel: UITextView!
+    @IBOutlet weak var CalendarView: FSCalendar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,11 @@ class CourseNotesViewController: UIViewController {
         
         CourseNameLabel.text = CourseTitle
         
-        CourseToDoListLabel.becomeFirstResponder()
+        CalendarView.dataSource = self
+        CalendarView.delegate = self
+        CalendarView.scrollEnabled = true
+        CalendarView.scrollDirection = .horizontal
+        
         
     }
 
@@ -41,6 +46,11 @@ class CourseNotesViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        // code
+        
+    }
     
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C608F89D86B0463C30F0D19 /* Pods_PageTheScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341756EE86ABB580C8482511 /* Pods_PageTheScroll.framework */; };
 		896183041D32DC3E00DE4676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896183031D32DC3E00DE4676 /* AppDelegate.swift */; };
 		896183061D32DC3E00DE4676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896183051D32DC3E00DE4676 /* ViewController.swift */; };
 		896183091D32DC3E00DE4676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896183071D32DC3E00DE4676 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B97E32A7A729F78E75254B /* Pods-PageTheScroll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageTheScroll.release.xcconfig"; path = "Pods/Target Support Files/Pods-PageTheScroll/Pods-PageTheScroll.release.xcconfig"; sourceTree = "<group>"; };
+		341756EE86ABB580C8482511 /* Pods_PageTheScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageTheScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		896183001D32DC3E00DE4676 /* PageTheScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageTheScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		896183031D32DC3E00DE4676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		896183051D32DC3E00DE4676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8961830D1D32DC3E00DE4676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8961830F1D32DC3E00DE4676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3360C161EF4657D00E0E752 /* CourseNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseNotesViewController.swift; sourceTree = "<group>"; };
+		E5D303C9B2AE50B63AAC592F /* Pods-PageTheScroll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageTheScroll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PageTheScroll/Pods-PageTheScroll.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C608F89D86B0463C30F0D19 /* Pods_PageTheScroll.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012990C99C92D5A49C490F66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				341756EE86ABB580C8482511 /* Pods_PageTheScroll.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		896182F71D32DC3D00DE4676 = {
 			isa = PBXGroup;
 			children = (
 				896183021D32DC3E00DE4676 /* PageTheScroll */,
 				896183011D32DC3E00DE4676 /* Products */,
+				D18DC6C3F769A2CD20F88B72 /* Pods */,
+				012990C99C92D5A49C490F66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = PageTheScroll;
 			sourceTree = "<group>";
 		};
+		D18DC6C3F769A2CD20F88B72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5D303C9B2AE50B63AAC592F /* Pods-PageTheScroll.debug.xcconfig */,
+				00B97E32A7A729F78E75254B /* Pods-PageTheScroll.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 896183121D32DC3E00DE4676 /* Build configuration list for PBXNativeTarget "PageTheScroll" */;
 			buildPhases = (
+				8FD9FD071280FF1F8C5D1326 /* [CP] Check Pods Manifest.lock */,
 				896182FC1D32DC3E00DE4676 /* Sources */,
 				896182FD1D32DC3E00DE4676 /* Frameworks */,
 				896182FE1D32DC3E00DE4676 /* Resources */,
+				82C24B896F59E9F120C8D4C5 /* [CP] Embed Pods Frameworks */,
+				1B14823EFFBD9D2E819F6E1E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B14823EFFBD9D2E819F6E1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PageTheScroll/Pods-PageTheScroll-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82C24B896F59E9F120C8D4C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PageTheScroll/Pods-PageTheScroll-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD9FD071280FF1F8C5D1326 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		896182FC1D32DC3E00DE4676 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		896183131D32DC3E00DE4676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D303C9B2AE50B63AAC592F /* Pods-PageTheScroll.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PageTheScroll/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		896183141D32DC3E00DE4676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B97E32A7A729F78E75254B /* Pods-PageTheScroll.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PageTheScroll/Info.plist;
